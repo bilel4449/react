@@ -9,7 +9,8 @@ export default class App extends Component {
     image:'https://assets-fr.imgfoot.com/media/cache/1200x1200/david-beckham-2122-62600b8f74455.jpg',
     profission:'Joueur FootBall',
     show:true,
-    count:0
+    count:0,
+    
   };
   // fonction pour compteur
   handlePlus=()=>this.setState({count:this.state.count+1})
@@ -36,6 +37,7 @@ export default class App extends Component {
 
         </>
         )}
+        <button onClick={this.handleRemise}>Remise</button>
 
 
       </div>
